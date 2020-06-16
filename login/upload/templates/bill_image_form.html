@@ -1,0 +1,29 @@
+
+<!DOCTYPE html> 
+<html lang="en"> 
+<style>
+.header {
+  padding: 10px;
+  text-align: left;
+  background: #303133d5;
+  color: white;
+  font-size: 15px;
+}
+</style>   
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Hotel_image</title> 
+</head> 
+<body> 
+        <div class="header">
+                <h4>Accountant.ai</h4>
+                
+              </div>
+    <p>Please upload the image.Format(.jpg,.png)</p>
+    <form method = "post" enctype="multipart/form-data"> 
+        {% csrf_token %} 
+        {{ form.as_p }} 
+        <button type="submit">Upload</button> 
+    </form> 
+</body> 
+</html> 

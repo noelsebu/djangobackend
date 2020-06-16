@@ -1,0 +1,24 @@
+<html>
+    {% if products_list %}
+    <table border="1">
+    <tr>
+        <th>Name</th>
+        <th>MRP</th>
+        <th>Wholesale Price</th>
+        <th>Quantity</th>
+    </tr>
+    
+    {% for product in products_list %}
+       
+        <tr>
+            <td>{{ product.name }}</td>
+            <td>{{ product.mrp }}</td>
+            <td>{{ product.wsp }}</td>
+            <td>{{ product.quantity }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+{% else %}
+    <p>No products are available.</p>
+{% endif %}
+</html>

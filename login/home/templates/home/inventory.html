@@ -1,0 +1,43 @@
+
+
+<main>
+	<main>
+	<div class="container">
+		<center>
+			<h2>Inventory Details</h2>
+		</center>
+		<div>
+			<h4>Total Inventory Value : {{total_value}}</h4>
+			<h4>Total Products : {{total_products}}</h4>
+		</div>
+		<div class="section"></div>
+		<table class="responsive-table highlight">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Product Name</th>
+					<th>Quantity</th>
+					<th>Measurement</th>
+					<th>Orignal Price</th>
+					<th>Profit</th>
+					<th>Selling Price</th>
+					<th>Supplier</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for i in inventory %}
+					<tr>
+						<td>{{i.id}}</td>
+						<td>{{i.pname}}</td>
+						<td>{{i.quantity}}</td>
+						<td>{{i.measurement}}</td>
+						<td>{{i.orginal_price}}</td>
+						<td>{{i.profit}}</td>
+						<td>{{i.selling_price}}</td>
+						<td>{{i.supplier}}</td>
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
+</main>

@@ -1,0 +1,8 @@
+{
+    "python.pythonPath": "py/bin/python3",
+    "python.autoComplete.extraPaths": [
+        "./login"
+    ],
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+}
